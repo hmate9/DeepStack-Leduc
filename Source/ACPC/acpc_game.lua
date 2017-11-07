@@ -56,6 +56,9 @@ function ACPCGame:get_next_situation()
     --2.0 parse the string to our state representation
     local parsed_state = self.protocol_to_node:parse_state(msg)
     
+    print("Parsed state:")
+    print(parsed_state)
+    
     --3.0 figure out if we should act
     
     --current player to act is us
